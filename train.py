@@ -8,15 +8,15 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-from google.colab import drive
-drive.mount('/gdrive/')
-# %cd /gdrive
+# from google.colab import drive
+# drive.mount('/gdrive/')
+# # %cd /gdrive
 
-ls
+# ls
 
-cd/gdrive/MyDrive/ml/
+# cd/gdrive/MyDrive/ml/
 
-ls
+# ls
 
 import pandas as pd
 
