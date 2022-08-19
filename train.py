@@ -44,7 +44,7 @@ with open("metrics.txt", 'w') as outfile:
   outfile.write("Test variance explained: %2.1f%%n" % test_score)
 
 import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, plot_roc_curve
 from sklearn import metrics
 
 # Confusion Matrix
@@ -68,6 +68,6 @@ plt.tight_layout()
 plt.savefig("roc.png",dpi=120)
 plt.close()
 
-from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, plot_roc_curve
+# from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, plot_roc_curve
 
 print(classification_report(y_test, model.predict(X_test)))
